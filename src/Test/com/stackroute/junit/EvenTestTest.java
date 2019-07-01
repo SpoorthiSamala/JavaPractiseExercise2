@@ -16,7 +16,7 @@ public class EvenTestTest {
     }
     @Test
     public void checkWhetherTheIntegerIsNotEven(){
-        Boolean b=even.isEven(3);
+        Boolean b=even.isEven(5);
         assertEquals(false,b);
     }
     @Test

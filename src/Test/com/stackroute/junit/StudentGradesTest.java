@@ -17,14 +17,14 @@ public class StudentGradesTest {
     }
     @Test
     public void checkForStudentsMarks(){
-        int students=4;
-        int[] marks = {10,20,30,40};
+        int students=5;
+        int[] marks = {10,20,30,40,50};
         actualResult=studentMarksCaluculator.getAverage(students,marks);
-        expectedResult="average of students marks is 25.0";
+        expectedResult="average of students marks is 30.0";
         assertEquals(expectedResult,actualResult);
 
         actualResult=studentMarksCaluculator.getMaxMarks(students,marks);
-        expectedResult="The maximum grade is 40";
+        expectedResult="The maximum grade is 50";
         assertEquals(expectedResult,actualResult);
 
 

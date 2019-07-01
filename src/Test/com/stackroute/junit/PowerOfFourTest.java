@@ -22,7 +22,7 @@ public class PowerOfFourTest {
     @Test
     public void checkWhetherItIsNotAPowerOf4()
     {
-        String result=power.PowerFour(83);
+        String result=power.PowerFour(90);
         assertEquals("Not a power of 4",result);
     }
     @After
