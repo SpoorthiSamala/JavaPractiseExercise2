@@ -1,7 +1,7 @@
 package com.stackroute.junit;
 
 public class ReverseOfInput {
-    public static String RevString(String str) //reversing the given string
+    public static String revString(String str) //reversing the given string
     {
         String string="";
         int len=str.length();

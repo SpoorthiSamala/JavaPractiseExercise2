@@ -12,17 +12,17 @@ public class ReverseOfInputTest {
     @Before
     public void setUp(){
         rev=new ReverseOfInput();
-    }
+    }//creation of object
     @Test
-    public void checkReverseOfAString()
+    public void givenStringReturnsReverseOfAString()
     {
-        String result=rev.RevString("Spoorthi");
+        String result=rev.revString("Spoorthi");
         assertEquals("ihtroopS",result);
     }
     @Test
-    public void checkReverseOfANumberReturnsString()
+    public void givenNumberReturnsReverseOfANumber()
     {
-        String result=rev.RevString("1234");
+        String result=rev.revString("1234");
         assertEquals("4321",result);
     }
     @After

@@ -23,7 +23,7 @@ public class ReadTextFile //to covert the content in a file to uppercase
             bufferReader.close();;
         }
         catch (IOException e) {
-            e.printStackTrace();
+            return "Exception";
         }
         return rev.toUpperCase();
     }

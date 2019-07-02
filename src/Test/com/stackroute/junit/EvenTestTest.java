@@ -1,6 +1,6 @@
 package com.stackroute.junit;
 
-import com.stackroute.junit.EvenTest;
+import com.stackroute.junit.EvenNum;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -8,19 +8,19 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class EvenTestTest {
-    EvenTest even;
+    EvenNum even;
     @Before
     public void setUp()
     {
-        even=new EvenTest();
-    }
+        even=new EvenNum();
+    }//creating object for the class EvenNum
     @Test
-    public void checkWhetherTheIntegerIsNotEven(){
+    public void checkWhetherTheGivenIntegerDoesNotReturnEven(){
         Boolean b=even.isEven(5);
         assertEquals(false,b);
     }
     @Test
-    public void checkWhetherTheIntegerIsEven(){
+    public void checkWhetherTheGivenIntegerReturnsEven(){
         Boolean b=even.isEven(4);
         assertEquals(true,b);
     }

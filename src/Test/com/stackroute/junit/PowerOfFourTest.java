@@ -12,18 +12,24 @@ public class PowerOfFourTest {
     @Before
     public void setUp(){
         power=new PowerOfFour();
-    }
+    }//creation of object
     @Test
-    public void checkWhetherItIsAPowerOf4()
+    public void checkWhetherTheGivenIntegerIsAPowerOf4()
     {
-        String result=power.PowerFour(64);
+        String result=power.powerFour(64);
         assertEquals("It is a power of 4",result);
     }
     @Test
-    public void checkWhetherItIsNotAPowerOf4()
+    public void checkWhetherTheGivenIntegerIsNotAPowerOf4()
     {
-        String result=power.PowerFour(90);
+        String result=power.powerFour(90);
         assertEquals("Not a power of 4",result);
+    }
+    @Test
+    public void checkWhetherTheGivenIntegerReturnsNull()
+    {
+        String result=power.powerFour(0);
+        assertEquals("null",result);
     }
     @After
     public void tearDown(){

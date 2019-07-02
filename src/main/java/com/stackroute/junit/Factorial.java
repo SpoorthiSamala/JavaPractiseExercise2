@@ -6,8 +6,9 @@ public class Factorial
     {
         int i, j;
         int factorial=1;
-        String[] string=new String[n];
         String str="";
+        try{
+        String[] string=new String[n];
         for (i = 1; i <= n; i++) {
             factorial = 1;
             for (j = 1; j <= i; j++) {
@@ -19,6 +20,10 @@ public class Factorial
         for(i=0;i<n;i++)
         {
             str=str+string[i]+"\n";
+        }
+        }
+        catch(Exception e){
+            str="Exception";
         }
         return str;
     }
