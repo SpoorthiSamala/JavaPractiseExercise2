@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class EvenTestTest {
+public class EvenNumTest {
     EvenNum even;
     @Before
     public void setUp()

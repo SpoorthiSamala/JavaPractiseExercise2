@@ -17,7 +17,7 @@ public class FrequencyOfWordsTest {
         frequencyOfWords=new FrequencyOfWords();
     }
     @Test
-    public void readFileAndConveretToUpperCase() throws IOException {
+    public void givenFileReadTheFileAndReturnFrequencyOfWords() throws IOException {
         String str=frequencyOfWords.readFrequencyOfWordsInFile(new File("file1.txt"));
         assertEquals(" i-2,am-2,man-1,good-1",str);
     }
